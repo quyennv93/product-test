@@ -24,7 +24,7 @@ export class AddcardService {
     async delete( id: number,by: Account) {
         const currentCard = this.addcardRepo.findOneByIdOrFail(id);
         if (!currentCard) {
-            throw new NotFoundException('noy found');
+            throw new NotFoundException('not found card');
         }
 
         const isOwner = (await currentCard).owner.id === by.id;
