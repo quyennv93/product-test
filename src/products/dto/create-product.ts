@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
 export class CreateProduct {
-    @ApiProperty()
+    @ApiProperty({example: 'iphone'})
     name: string;
 }

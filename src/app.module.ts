@@ -23,6 +23,6 @@ import { AddcardModule } from './addcard/addcard.module';
     ProductsModule,
     AddcardModule],
   controllers: [AppController],
-  providers: [AppService, AddcardService],
+  providers: [AppService],
 })
 export class AppModule {}
